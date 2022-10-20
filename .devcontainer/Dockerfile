@@ -7,5 +7,9 @@ FROM leanprovercommunity/lean:debian
 
 # ssh to github once to bypass the unknown fingerprint warning
 RUN ssh -o StrictHostKeyChecking=no github.com || true
+
+# install the default toolchain 
+RUN elan self update
+
 # clone a copy of mathlib, and download precompiled oleans
 RUN leanproject get mathlib
