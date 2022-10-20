@@ -1,7 +1,9 @@
 {
 	"name": "mathlib",
 	// "image": "leanprovercommunity/mathlib", // it's faster to build the container than download it
-	
+	"build": {
+		"dockerfile": "Dockerfile",
+	},
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
 		"terminal.integrated.shell.linux": "/bin/bash"
