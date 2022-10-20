@@ -2,7 +2,7 @@
 	"name": "mathlib",
 	// "image": "leanprovercommunity/mathlib", // it's faster to build the container than download it
 	"build": {
-		"dockerfile": "./.devcontainer/Dockerfile",
+		"dockerfile": "Dockerfile",
 	},
 
 	// Set *default* container specific settings.json values on container create.
